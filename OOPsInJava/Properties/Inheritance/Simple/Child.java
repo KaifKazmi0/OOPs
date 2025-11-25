@@ -1,4 +1,4 @@
-package OOPsInJava.Properties.Inheritance;
+package OOPsInJava.Properties.Inheritance.Simple;
 
 public class Child extends Parent{
     int weight;
