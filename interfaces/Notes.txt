@@ -1,0 +1,33 @@
+⭐ Final Correct Rules for Interface Method Resolution in Java
+✔ Rule 1:
+If a method exists ONLY as a default (no abstract version anywhere) → default is used.
+
+Example:
+
+Only Multimedia has default start()
+
+Engine does NOT have start()
+
+👉 Car does NOT need to override.
+👉 Multimedia's default start() runs.
+
+✔ Rule 2:
+If BOTH interfaces have default methods with the SAME signature → Car MUST override.
+
+Reason: Conflict (Java doesn’t know which default to use)
+
+👉 Car must provide its own implementation.
+
+✔ Rule 3 (IMPORTANT):
+If ANY interface has the method as abstract → Car MUST override, even if other interfaces have default.
+
+This is your case:
+
+Engine → void start(); (abstract)
+
+Multimedia → default void start()
+
+Because of Engine’s abstract method:
+
+👉 Car MUST override start()
+👉 Multimedia’s default is IGNORED
