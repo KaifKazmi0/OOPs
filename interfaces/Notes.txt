@@ -31,3 +31,19 @@ Because of Engine’s abstract method:
 
 👉 Car MUST override start()
 👉 Multimedia’s default is IGNORED
+
+
+
+🔥 Final Rule Set (best version):
+
+One default, no abstract → default used
+
+One default + one abstract → must override
+
+Two defaults → must override
+
+Two abstracts → must override
+
+Only case where override is NOT required:
+
+The method exists ONLY as default in all interfaces.
