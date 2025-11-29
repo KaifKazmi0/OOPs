@@ -1,4 +1,4 @@
-package interfaces;
+package interfaces.InterfaceBasics;
 
 public interface Multimedia {
     default void start(){

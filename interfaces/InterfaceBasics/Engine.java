@@ -1,4 +1,4 @@
-package interfaces;
+package interfaces.InterfaceBasics;
 
 public interface Engine {
     void start();

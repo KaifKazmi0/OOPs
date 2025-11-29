@@ -1,4 +1,4 @@
-package interfaces;
+package interfaces.InterfaceBasics;
 
 public class Car implements Engine,Brake,Multimedia{
 
