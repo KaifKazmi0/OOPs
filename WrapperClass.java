@@ -1,16 +1,19 @@
 public class WrapperClass {
     public static void main(String[] args) {
-        //this is stored in stack memory and is not treated a object
+
+        // primitive variable i.e.stored in stack
         int a = 5;
 
-        //this is storee in heap and is stored in heap
-        Integer aa = 5;
+        // Wrapper object (stored in heap, reference in stack)
+        Integer aa = 5; // autoboxing
 
-
+        // final primitive (value cannot be changed) will still be stored in stack
         final int ab = 5;
-        // Can't be change to  ab = 6 in Primitive-Datatypes;
 
+        // final variable must be initialized once
         final int num;
-        System.out.println(aa.toString());
+        num = 10;
+
+        System.out.println(aa.toString()); // prints 5
     }
 }
