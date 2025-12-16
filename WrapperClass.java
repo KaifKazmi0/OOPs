@@ -15,5 +15,15 @@ public class WrapperClass {
         num = 10;
 
         System.out.println(aa.toString()); // prints 5
+
+
+        Integer a = 100;
+        Integer b = 100;
+        System.out.println(a == b); // true (cached)
+
+        Integer x = 200;
+        Integer y = 200;
+        System.out.println(x == y); // false (not cached)
+
     }
 }
